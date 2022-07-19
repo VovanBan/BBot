@@ -84,10 +84,10 @@ async def cmd_images_update(message: types.Message):
         for image_path in images_path:
             os.remove(image_path[0])
 
-async def on_startup():
+async def on_startup(dp):
     await bot.set_webhook(url=WEBHOOK_URL)
 
-async def on_shutdown():
+async def on_shutdown(dp):
     await bot.delete_webhook()
 
 def main_memabotedit():
