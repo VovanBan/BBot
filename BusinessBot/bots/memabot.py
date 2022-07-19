@@ -1,8 +1,8 @@
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.executor import start_webhook
-from BusinessBot.database.databaseimages import DatabaseImages
-from BusinessBot.database.databaseusers import DatabaseUsers
+from database.databaseimages import DatabaseImages
+from database.databaseusers import DatabaseUsers
 import os
 
 TOKEN = '5593476084:AAFU3w39l1_gexGaS5A4thkmwTskahS38-E'
