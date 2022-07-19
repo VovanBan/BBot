@@ -86,10 +86,10 @@ async def cmd_like_photo(call: types.CallbackQuery):
     else:
         await call.message.answer(text='Подпишись на этот телеграмм канал\n\nt.me/memabotchannel')
 
-async def on_startup():
+async def on_startup(dp):
     await bot.set_webhook(url=WEBHOOK_URL)
 
-async def on_shutdown():
+async def on_shutdown(dp):
     await bot.delete_webhook()
 
 def main_memabot():
